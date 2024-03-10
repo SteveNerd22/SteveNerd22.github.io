@@ -23,15 +23,24 @@
             text-decoration: none;
             font-size: 18px;
             border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #sezione1, #sezione2, #sezione3 {
+            display: none;
+        }
+
+        .mostra {
+            display: block;
         }
     </style>
 </head>
 <body>
     <h1>Benvenuti alla Campagna di D&D</h1>
 
-    <a href="#sezione1" class="bottone">Vai alla Sezione 1</a>
-    <a href="#sezione2" class="bottone">Vai alla Sezione 2</a>
-    <a href="#sezione3" class="bottone">Vai alla Sezione 3</a>
+    <a href="#" class="bottone" onclick="mostraSezione('sezione1')">Mostra Sezione 1</a>
+    <a href="#" class="bottone" onclick="mostraSezione('sezione2')">Mostra Sezione 2</a>
+    <a href="#" class="bottone" onclick="mostraSezione('sezione3')">Mostra Sezione 3</a>
 
     <div id="sezione1">
         <h2>Sezione 1</h2>
@@ -47,5 +56,17 @@
         <h2>Sezione 3</h2>
         <p>Contenuto della Sezione 3...</p>
     </div>
+
+    <script>
+        function mostraSezione(idSezione) {
+            // Nascondi tutte le sezioni
+            document.getElementById('sezione1').style.display = 'none';
+            document.getElementById('sezione2').style.display = 'none';
+            document.getElementById('sezione3').style.display = 'none';
+
+            // Mostra solo la sezione selezionata
+            document.getElementById(idSezione).style.display = 'block';
+        }
+    </script>
 </body>
 </html>

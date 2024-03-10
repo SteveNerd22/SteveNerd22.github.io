@@ -1,0 +1,30 @@
+[
+  {
+    "titolo": "PERICOLO! SCAGLIA NOTTURNA!",
+	"urgente": 0,
+    "corpo": "La temibile dragonessa conosciuta come Scaglia Notturna ha seminato il terrore lungo la costa tra le città di Daggerford e Baldur's Gate. Questa creatura astuta, irascibile e malvagia non mostra pietà per nessun essere vivente. In passato, Scaglia Notturna si manifestava solo in rare occasioni, ma ora qualcosa sembra aver scatenato la sua collera, e sospettiamo che nasconda un tesoro di inestimabile valore. È prioritario recuperare il tesoro nascosto di Scaglia Notturna.",
+    "ricompensa": {
+      "base": 300,
+      "extra names": ["Bonus persone", "Bonus Incendi"],
+      "extraGP": [100, 200]
+    },
+    "conclusione": {
+      "corpo": "La missione è da considerarsi conclusa quando il drago viene placato o eliminato.",
+      "tempi": "Date le caratteristiche uniche di questa missione, non sono previste penalità di tempo. Al contrario, è prevista una medaglia di merito per la squadra che riesce a recuperare il tesoro del drago."
+    }
+  },
+  {
+    "titolo": "Altra Missione",
+	"urgente": 1,
+    "corpo": "Descrizione della seconda missione...",
+    "ricompensa": {
+      "base": 250,
+      "extra names": [],
+      "extraGP": []
+    },
+    "conclusione": {
+      "corpo": "La missione è da considerarsi conclusa quando...",
+      "tempi": "..."
+    }
+  }
+]

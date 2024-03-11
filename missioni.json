@@ -1,19 +1,5 @@
 [
 	{
-		"titolo": "Caverna Pullulante di Ghoul",
-		"urgente": 0,
-		"corpo": "Nei pressi dell'entrata ovest di Neverwinter, è stata individuata una caverna sovraffollata di ghoul, che sembrano obbedire a un capo di natura diversa, possibilmente umana. Questi ghoul si muovono in modo organizzato, agendo come una forza unita piuttosto che come bestie selvagge.È probabile che il 'capo' di queste creature decida quando e come rapire cittadini di Neverwinter per nutrire i suoi seguaci. Date le pericolose intenzioni di questo individuo, è imperativo prestare molta attenzione a questa minaccia emergente.",
-		"ricompensa": {
-			"base": 200,
-			"extra names": ["Bonus per Persona Salvata", "Bonus Capo dei Ghoul"],
-			"extraGP": [10, 100]
-		},
-		"conclusione": {
-			"corpo": "La missione è considerata conclusa quando il capo dei ghoul viene catturato o eliminato (con prove adeguate) e il numero di ghoul nella caverna è ridotto a un livello sicuro per gli abitanti di Neverwinter.",
-			"tempi": "Il compenso viene dimezzato se la missione non viene portata a termine entro 7 giorni dalla sua accettazione.\nNel caso di un fallimento, il capo del gruppo dovrà versare 75 GP all'Alleanza."
-		}
-	},
-	{
 		"titolo": "PERICOLO! SCAGLIA NOTTURNA!",
 		"urgente": 0,
 		"corpo": "La temibile dragonessa conosciuta come Scaglia Notturna ha seminato il terrore lungo la costa tra le città di Daggerford e Baldur's Gate. Questa creatura astuta, irascibile e malvagia non mostra pietà per nessun essere vivente. In passato, Scaglia Notturna si manifestava solo in rare occasioni, ma ora qualcosa sembra aver scatenato la sua collera, e sospettiamo che nasconda un tesoro di inestimabile valore. È prioritario recuperare il tesoro nascosto di Scaglia Notturna.",

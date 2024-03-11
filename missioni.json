@@ -1,19 +1,5 @@
 [
 	{
-		"titolo": "PERICOLO! SCAGLIA NOTTURNA!",
-		"urgente": 0,
-		"corpo": "La temibile dragonessa conosciuta come Scaglia Notturna ha seminato il terrore lungo la costa tra le città di Daggerford e Baldur's Gate. Questa creatura astuta, irascibile e malvagia non mostra pietà per nessun essere vivente. In passato, Scaglia Notturna si manifestava solo in rare occasioni, ma ora qualcosa sembra aver scatenato la sua collera, e sospettiamo che nasconda un tesoro di inestimabile valore. È prioritario recuperare il tesoro nascosto di Scaglia Notturna.",
-		"ricompensa": {
-			"base": 300,
-			"extra names": ["Bonus Tesoro"],
-			"extraGP": [300]
-		},
-		"conclusione": {
-			"corpo": "La missione è da considerarsi conclusa quando il drago viene placato o eliminato.",
-			"tempi": "Date le caratteristiche uniche di questa missione, non sono previste penalità di tempo. Al contrario, è prevista una medaglia di merito per la squadra che riesce a recuperare il tesoro del drago."
-		}
-	},
-	{
 		"titolo": "Problemi di Schiavi",
 		"urgente": 1,
 		"corpo": "Nelle terre orientali, al di fuori della sfera d'influenza dell'Alleanza, un carro diretto ad est trasporta individui caduti vittime di giri di tratte umane. Questi sventurati vengono trasformati in gladiatori e costretti a combattere in varie arene. La missione è intercettare questo carro e liberare i prigionieri prima che raggiunga la sua destinazione. Il capo dell'organizzazione di tratte schiaviste responsabile di queste orribili pratiche è il nostro obiettivo primario.",

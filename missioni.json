@@ -1,12 +1,26 @@
 [
   {
+	"titolo": "Caverna Pullulante di Ghoul",
+	"urgente": 0,
+	"corpo": "Nei pressi dell'entrata ovest di Neverwinter, è stata individuata una caverna sovraffollata di ghoul, che sembrano obbedire a un capo di natura diversa, possibilmente umana. Questi ghoul si muovono in modo organizzato, agendo come una forza unita piuttosto che come bestie selvagge.È probabile che il 'capo' di queste creature decida quando e come rapire cittadini di Neverwinter per nutrire i suoi seguaci. Date le pericolose intenzioni di questo individuo, è imperativo prestare molta attenzione a questa minaccia emergente.",
+    "ricompensa": {
+	  "base": 200,
+	  "extra names": ["Bonus per Persona Salvata", "Bonus Capo dei Ghoul"],
+	  "extraGP": [10, 100]
+	}
+	"conclusione": {
+	  "corpo": "La missione è considerata conclusa quando il capo dei ghoul viene catturato o eliminato (con prove adeguate) e il numero di ghoul nella caverna è ridotto a un livello sicuro per gli abitanti di Neverwinter.",
+      "tempi": "Il compenso viene dimezzato se la missione non viene portata a termine entro 7 giorni dalla sua accettazione.\nNel caso di un fallimento, il capo del gruppo dovrà versare 75 GP all'Alleanza."
+    }
+  },
+  {
     "titolo": "PERICOLO! SCAGLIA NOTTURNA!",
 	"urgente": 0,
     "corpo": "La temibile dragonessa conosciuta come Scaglia Notturna ha seminato il terrore lungo la costa tra le città di Daggerford e Baldur's Gate. Questa creatura astuta, irascibile e malvagia non mostra pietà per nessun essere vivente. In passato, Scaglia Notturna si manifestava solo in rare occasioni, ma ora qualcosa sembra aver scatenato la sua collera, e sospettiamo che nasconda un tesoro di inestimabile valore. È prioritario recuperare il tesoro nascosto di Scaglia Notturna.",
     "ricompensa": {
       "base": 300,
-      "extra names": ["Bonus persone", "Bonus Incendi"],
-      "extraGP": [100, 200]
+      "extra names": ["Bonus Tesoro"],
+      "extraGP": [300]
     },
     "conclusione": {
       "corpo": "La missione è da considerarsi conclusa quando il drago viene placato o eliminato.",
@@ -14,17 +28,30 @@
     }
   },
   {
-    "titolo": "Altra Missione",
+    "titolo": "Problemi di Schiavi",
 	"urgente": 1,
-    "corpo": "Descrizione della seconda missione...",
+    "corpo": "Nelle terre orientali, al di fuori della sfera d'influenza dell'Alleanza, un carro diretto ad est trasporta individui caduti vittime di giri di tratte umane. Questi sventurati vengono trasformati in gladiatori e costretti a combattere in varie arene. La missione è intercettare questo carro e liberare i prigionieri prima che raggiunga la sua destinazione. Il capo dell'organizzazione di tratte schiaviste responsabile di queste orribili pratiche è il nostro obiettivo primario.",
     "ricompensa": {
-      "base": 250,
-      "extra names": [],
-      "extraGP": []
+      "base": 300,
+      "extra names": ["Cattura del Capo"],
+      "extraGP": [200]
     },
     "conclusione": {
-      "corpo": "La missione è da considerarsi conclusa quando...",
-      "tempi": "..."
+      "corpo": "La missione è da considerarsi conclusa quando il carro viene fermato, i prigionieri liberati e il capo dell'organizzazione catturato.",
+      "tempi": "Data la lunghezza prevista della missione, non sono previste penalità di tempo.\nPenalità di 100 GP se i gladiatori non vengono salvati."
     }
-  }
+  },
+  {
+    "titolo": "Alleanza Naufragata",
+	"urgente": 0,
+    "corpo": "Una flotta pirata minaccia le acque al largo della costa, creando instabilità e insicurezza. Per preservare la pace e garantire la sicurezza delle rotte commerciali, l'Alleanza dei Lord ha deciso di cercare un accordo con il capo di questa flotta. La missione richiede di recapitare una lettera al capo pirata e persuaderlo ad accettare un accordo di cessate il fuoco e collaborazione tra le due parti.\nIn caso la situazione prenda una piega indesiderata e l’unica via percorribile è quella di eliminare il capo pirata è comunque una possibilità, ma da evitare per la pericolosità.",
+    "ricompensa": {
+      "base": 400,
+      "extra names": ["Bonus Esclusivo Eliminazione Capo Pirata", "Bonus Accordo di Collaborazione"],
+      "extraGP": [200, 400]
+    },
+    "conclusione": {
+      "corpo": "La missione è considerata conclusa quando l'accordo di cessate il fuoco o l'accordo di collaborazione è stato accettato dal capo della flotta pirata.\nIn alternativa la missione è da considerarsi conclusa se il capo pirata è stato eliminato e la sua flotta non è più una minaccia per l’alleanza.",
+      "tempi": "Non sono previste penalità di tempo per la complessità della missione.\nPenalità di 100 GP se la missione non viene portata a termine.\nPenalità aggiuntiva di 100 GP se la lettera non viene recapitata o torna indietro aperta.\nPenalità aggiuntiva di 250 GP se le ostilità con i pirati si intensificano anziché diminuire."
+    }
 ]

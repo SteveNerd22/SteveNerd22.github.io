@@ -197,6 +197,20 @@
 
             document.getElementById("missioni-container").innerHTML = codiceHTMLMissioni;
             document.getElementById("paginazione-container").innerHTML = codiceHTMLPaginazione;
+	    var frecciaIndietro = document.getElementById("freccia-indietro");
+    	    var frecciaAvanti = document.getElementById("freccia-avanti");
+
+    	    if (paginaCorrente > 1) {
+        	frecciaIndietro.style.display = 'block';
+    	    } else {
+        	frecciaIndietro.style.display = 'none';
+    	    }
+
+    	    if (paginaCorrente < Math.ceil(missioni.length / missioniPerPage)) {
+        	frecciaAvanti.style.display = 'block';
+    	    } else {
+        	frecciaAvanti.style.display = 'none';
+    	    }
         }
 		
 		 function mostraSezione(idSezione) {

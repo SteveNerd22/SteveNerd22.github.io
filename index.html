@@ -171,7 +171,7 @@
             var numeroPagine = Math.ceil(missioni.length / missioniPerPage);
             var codiceHTML = "";
 
-	    codiceHTML += "<button id="freccia-indietro" onclick='cambiaPagina(paginaCorrente - 1)'>-</button>"
+	    codiceHTML += "<button id="freccia-indietro" onclick='cambiaPagina(paginaCorrente - 1)'>-</button>";
 
             for (var i = 1; i <= numeroPagine; i++) {
                 codiceHTML += "<span class='pagina' onclick='cambiaPagina(" + i + ")'>" + i;
@@ -182,7 +182,7 @@
 				}
 				codiceHTML += "</span>";
             }
-	    codiceHTML += "<button id="freccia-avanti" onclick='cambiaPagina(paginaCorrente + 1)'>+</button>"
+	    codiceHTML += "<button id="freccia-avanti" onclick='cambiaPagina(paginaCorrente + 1)'>+</button>";
 
             return codiceHTML;
         }

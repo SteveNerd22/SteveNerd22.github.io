@@ -81,19 +81,29 @@
 
 		#timeline {
     		position: relative;
-   	 		width: 50px; /* Larghezza della linea temporale */
-    		height: 100%; /* Altezza della timeline */
+    		width: 50px; /* Larghezza della timeline */
+    		height: 400px; /* Altezza della timeline */
     		background-color: #ccc; /* Colore di sfondo della timeline */
+    		overflow-y: auto; /* Abilita lo scrolling verticale */
 		}
 
 		#timeline::before {
     		content: '';
     		position: absolute;
     		top: 0;
-    		bottom: 0;
-    		left: 50%; /* Posizionamento orizzontale al centro */
+    		left: 50%;
     		width: 2px; /* Spessore della linea temporale */
     		background-color: #000; /* Colore della linea temporale */
+    		height: 100%; /* Altezza della linea temporale */
+		}
+
+		.event {
+    		position: absolute;
+    		left: -8px; /* Posizionamento rispetto alla linea temporale */
+    		width: 20px;
+    		height: 20px;
+    		background-color: red; /* Colore dell'evento */
+    		border-radius: 50%; /* Per rendere l'evento circolare */
 		}
 
     </style>

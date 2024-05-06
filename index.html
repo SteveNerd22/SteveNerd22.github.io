@@ -116,6 +116,7 @@
     		font-size: 12px; /* Dimensione del testo */
     		text-align: center; /* Allineamento del testo al centro */
     		line-height: 1.5; /* Altezza riga del testo */
+    		transform: translateY(-50%); /* Posiziona il testo al centro della linea temporale */
 		}
 
     </style>
@@ -270,6 +271,14 @@
 
         // Funzione per caricare e visualizzare le missioni
         function caricaEMostraMissioni() {
+			
+            var timelineDiv = document.getElementById("timeline");
+            for (var year = 0; year <= 1358; year++) {
+                var yearDiv = document.createElement("div");
+                yearDiv.className = "year-divider";
+                yearDiv.textContent = year;
+                timelineDiv.appendChild(yearDiv);
+				
             // Effettua una richiesta AJAX per caricare il file JSON delle missioni
             var xhr = new XMLHttpRequest();
             xhr.onreadystatechange = function() {
@@ -290,16 +299,6 @@
 
         // Chiamata alla funzione per caricare e visualizzare le missioni al caricamento della pagina
         window.onload = caricaEMostraMissioni;
-
-		window.onload = function() {
-            var timelineDiv = document.getElementById("timeline");
-            for (var year = 0; year <= 1358; year++) {
-                var yearDiv = document.createElement("div");
-                yearDiv.className = "year-divider";
-                yearDiv.textContent = year;
-                timelineDiv.appendChild(yearDiv);
-            }
-        };
         // ... (altre funzioni JavaScript, se necessario) ...
     </script>
 </body>

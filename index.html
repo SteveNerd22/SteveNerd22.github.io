@@ -106,6 +106,13 @@
     		border-radius: 50%; /* Per rendere l'evento circolare */
 		}
 
+		#years {
+    		position: absolute;
+    		top: 0;
+    		left: calc(50% + 10px); /* Posizione accanto alla linea temporale */
+    		transform: translateY(-50%);
+		}
+
 		.year-divider {
     		position: absolute;
     		left: 0;
@@ -272,7 +279,7 @@
         // Funzione per caricare e visualizzare le missioni
         function caricaEMostraMissioni() {
 			
-            var timelineDiv = document.getElementById("timeline");
+            var timelineDiv = document.getElementById("years");
     		var timelineHeight = timelineDiv.clientHeight; // Altezza della timeline
     		var numYears = 1358; // Numero totale di anni
 			

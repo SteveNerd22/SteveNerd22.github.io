@@ -273,10 +273,17 @@
         function caricaEMostraMissioni() {
 			
             var timelineDiv = document.getElementById("timeline");
-            for (var year = 0; year <= 1358; year++) {
+    		var timelineHeight = timelineDiv.clientHeight; // Altezza della timeline
+    		var numYears = 1358; // Numero totale di anni
+			
+            for (var year = 0; year <= numYears; year++) {
                 var yearDiv = document.createElement("div");
                 yearDiv.className = "year-divider";
                 yearDiv.textContent = year;
+        		// Calcoliamo la posizione verticale della divisione in base all'anno
+        		var positionPercentage = (year / numYears) * 100;
+				yearDiv.style.top = positionPercentage + "%";
+				
                 timelineDiv.appendChild(yearDiv);
 	    }
 				

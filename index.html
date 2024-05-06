@@ -1,30 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Mia Campagna di D&D</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f0f0f0;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-
-        #header {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            text-align: center;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1;
-        }
-
-        #tasti {
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>La Mia Campagna di D&D</title>
+	<style>
+		body {
+			font-family: 'Arial', sans-serif;
+			background-color: #f0f0f0;
+			color: #333;
+			margin: 0;
+			padding: 0;
+		}
+		#header {
+		    background-color: #333;
+			color: white;
+			padding: 10px;
+			text-align: center;
+			position: fixed;
+			width: 100%;
+			top: 0;
+			z-index: 1;
+		}
+		
+		#tasti {
 			display: flex;
 			justify-content: flex-start;
 			align-items: center;
@@ -45,120 +44,119 @@
 			cursor: pointer;
 			margin-right: 0;
 		}
-
-        #contenuto {
-            margin-top: 120px;
-            padding: 20px;
-        }
-
-        #dettagli {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            text-align: center;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-
-        .sezione {
-            display: none;
-        }
-
-        .mostra {
-            display: block;
-        }
-
-        .missione {
-            margin-bottom: 20px;
-        }
-
-        #freccia-indietro, #freccia-avanti {
-            font-size: 24px;
-            margin: 0 10px;
-            cursor: pointer;
-        }
-
+		
+		#contenuto {
+			margin-top: 120px;
+			padding: 20px;
+		}
+		
+		#dettagli {
+			background-color: #333;
+			color: white;
+			padding: 10px;
+			text-align: center;
+			position: fixed;
+			width: 100%;
+			bottom: 0;
+		}
+		
+		.sezione {
+			display: none;
+		}
+		
+		.mostra {
+			display: block;
+		}
+		
+		.missione {
+			margin-bottom: 20px;
+		}
+		
+		#freccia-indietro, #freccia-avanti {
+			font-size: 24px;
+			margin: 0 10px;
+			cursor: pointer;
+		}
+		
 		#timeline {
-    		position: relative;
-    		width: 50px; /* Larghezza della timeline */
-    		height: 40000px; /* Altezza della timeline */
-    		background-color: #ccc; /* Colore di sfondo della timeline */
-    		overflow-y: auto; /* Abilita lo scrolling verticale */
+			position: relative;
+			width: 50px; /* Larghezza della timeline */
+			height: 40000px; /* Altezza della timeline */
+			background-color: #ccc; /* Colore di sfondo della timeline */
+			overflow-y: auto; /* Abilita lo scrolling verticale */
 		}
-
+		
 		#timeline::before {
-    		content: '';
-    		position: absolute;
-    		top: 0;
-    		left: 50%;
-    		width: 2px; /* Spessore della linea temporale */
-    		background-color: #000; /* Colore della linea temporale */
-    		height: 100%; /* Altezza della linea temporale */
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 50%;
+			width: 2px; /* Spessore della linea temporale */
+			background-color: #000; /* Colore della linea temporale */
+			height: 100%; /* Altezza della linea temporale */
 		}
-
+		
 		.event {
-    		position: absolute;
-    		left: -8px; /* Posizionamento rispetto alla linea temporale */
-    		width: 20px;
-    		height: 20px;
-    		background-color: red; /* Colore dell'evento */
-    		border-radius: 50%; /* Per rendere l'evento circolare */
+			position: absolute;
+			left: -8px; /* Posizionamento rispetto alla linea temporale */
+			width: 20px;
+			height: 20px;
+			background-color: red; /* Colore dell'evento */
+			border-radius: 50%; /* Per rendere l'evento circolare */
 		}
-
+		
 		#years {
-    		position: absolute;
-    		top: 0;
-    		left: calc(50% + 10px); /* Posizione accanto alla linea temporale */
-    		transform: translateY(-50%);
+			position: absolute;
+			top: 0;
+			left: calc(50% + 10px); /* Posizione accanto alla linea temporale */
+			transform: translateY(-50%);
 		}
-
+		
 		.year-divider {
-    		position: absolute;
-    		left: 0;
-    		width: 100%;
-    		height: 1px; /* Spessore della divisione */
-    		background-color: #000; /* Colore della divisione */
-    		color: #000; /* Colore del testo */
-    		font-size: 12px; /* Dimensione del testo */
-    		text-align: center; /* Allineamento del testo al centro */
-    		line-height: 1.5; /* Altezza riga del testo */
-    		transform: translateY(-50%); /* Posiziona il testo al centro della linea temporale */
+			position: absolute;
+			left: 0;
+			width: 100%;
+			height: 1px; /* Spessore della divisione */
+			background-color: #000; /* Colore della divisione */
+			color: #000; /* Colore del testo */
+			font-size: 12px; /* Dimensione del testo */
+			text-align: center; /* Allineamento del testo al centro */
+			line-height: 1.5; /* Altezza riga del testo */
+			transform: translateY(-50%); /* Posiziona il testo al centro della linea temporale */
 		}
-
-    </style>
+	</style>
 </head>
 <body>
-    <div id="header">
-        <h1>Alleanza Dei Lord</h1>
-    </div>
-
-    <div id="tasti">
-        <a href="#" class="bottone" onclick="mostraSezione('sezione1')">Elenco Missioni</a>
-        <a href="#" class="bottone" onclick="mostraSezione('sezione2')">Sezione 2</a>
-        <a href="#" class="bottone" onclick="mostraSezione('sezione3')">Sezione 3</a>
-    </div>
-
-    <div id="contenuto">
-        <div id="sezione1" class="sezione">
+	<div id="header">
+		<h1>Alleanza Dei Lord</h1>
+	</div>
+	
+	<div id="tasti">
+		<a href="#" class="bottone" onclick="mostraSezione('sezione1')">Elenco Missioni</a>
+		<a href="#" class="bottone" onclick="mostraSezione('sezione2')">Sezione 2</a>
+		<a href="#" class="bottone" onclick="mostraSezione('sezione3')">Sezione 3</a>
+	</div>
+	
+	<div id="contenuto">
+		<div id="sezione1" class="sezione">
 			<div id="header">
 				<h1>Elenco Missioni</h1>
 			</div>
-            <title>Elenco Missioni</title>
-            <div id="missioni-container"></div>
-            <div id="paginazione-container">
-                <button id="freccia-indietro" onclick="cambiaPagina(paginaCorrente - 1)">-</button>
+			<title>Elenco Missioni</title>
+			<div id="missioni-container"></div>
+			<div id="paginazione-container">
+				<button id="freccia-indietro" onclick="cambiaPagina(paginaCorrente - 1)">-</button>
 				<span id="pagine">1</span> <!-- Pagina corrente -->
 				<button id="freccia-avanti" onclick="cambiaPagina(paginaCorrente + 1)">+</button>
-            </div>
-        </div>
-
-        <div id="sezione2" class="sezione">
-            <h1>Timeline</h1>
-        	<div id="timeline"></div>
-        	<div id="years"></div>
-        	<div class="event" style="top: 20%;">Evento 1</div>
-    		<div class="event" style="top: 40%;">Evento 2</div>
+			</div>
+		</div>
+		
+		<div id="sezione2" class="sezione">
+			<h1>Timeline</h1>
+			<div id="timeline"></div>
+			<div id="years"></div>
+			<div class="event" style="top: 20%;">Evento 1</div>
+			<div class="event" style="top: 40%;">Evento 2</div>
     		<!-- Altri eventi -->
     		</div>
         </div>

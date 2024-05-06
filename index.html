@@ -124,7 +124,7 @@
         </div>
 
         <div id="sezione2" class="sezione">
-            <h2>Timeline della Campagna</h2>
+            <h2>Timeline</h2>
     		<div id="timeline">
         		<!-- Qui andrà la linea temporale -->
     		</div>
@@ -191,7 +191,7 @@
             var numeroPagine = Math.ceil(missioni.length / missioniPerPage);
             var codiceHTML = "";
 
-	    codiceHTML += "<button id='freccia-indietro' onclick='cambiaPagina(paginaCorrente - 1)'>-</button>";
+	    	codiceHTML += "<button id='freccia-indietro' onclick='cambiaPagina(paginaCorrente - 1)'>-</button>";
 
             for (var i = 1; i <= numeroPagine; i++) {
                 codiceHTML += "<span class='pagina' onclick='cambiaPagina(" + i + ")'>" + i;
@@ -202,7 +202,7 @@
 				}
 				codiceHTML += "</span>";
             }
-	    codiceHTML += "<button id='freccia-avanti' onclick='cambiaPagina(paginaCorrente + 1)'>+</button>";
+	    	codiceHTML += "<button id='freccia-avanti' onclick='cambiaPagina(paginaCorrente + 1)'>+</button>";
 
             return codiceHTML;
         }
@@ -220,7 +220,7 @@
 
             document.getElementById("missioni-container").innerHTML = codiceHTMLMissioni;
             document.getElementById("paginazione-container").innerHTML = codiceHTMLPaginazione;
-	    var frecciaIndietro = document.getElementById("freccia-indietro");
+	    	var frecciaIndietro = document.getElementById("freccia-indietro");
     	    var frecciaAvanti = document.getElementById("freccia-avanti");
 
     	    if (paginaCorrente > 1) {
@@ -236,7 +236,7 @@
     	    }
         }
 		
-		 function mostraSezione(idSezione) {
+		function mostraSezione(idSezione) {
 			// Nascondi tutte le sezioni
 			document.querySelectorAll('.sezione').forEach(sezione => sezione.style.display = 'none');
 

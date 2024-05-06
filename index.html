@@ -78,6 +78,24 @@
             margin: 0 10px;
             cursor: pointer;
         }
+
+		#timeline {
+    		position: relative;
+   	 		width: 50px; /* Larghezza della linea temporale */
+    		height: 100%; /* Altezza della timeline */
+    		background-color: #ccc; /* Colore di sfondo della timeline */
+		}
+
+		#timeline::before {
+    		content: '';
+    		position: absolute;
+    		top: 0;
+    		bottom: 0;
+    		left: 50%; /* Posizionamento orizzontale al centro */
+    		width: 2px; /* Spessore della linea temporale */
+    		background-color: #000; /* Colore della linea temporale */
+		}
+
     </style>
 </head>
 <body>
@@ -106,8 +124,10 @@
         </div>
 
         <div id="sezione2" class="sezione">
-            <h2>Sezione 2</h2>
-            <p>Contenuto della Sezione 2...</p>
+            <h2>Timeline della Campagna</h2>
+    		<div id="timeline">
+        		<!-- Qui andrà la linea temporale -->
+    		</div>
         </div>
 
         <div id="sezione3" class="sezione">

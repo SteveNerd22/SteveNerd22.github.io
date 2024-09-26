@@ -15,7 +15,7 @@ function generaCodiceHTMLMissioni() {
     codiceHTML += "<h2>Ricompensa</h2>";		
     codiceHTML += "<p>Ricompensa base: " + missione.ricompensa.base + " GP</p>";    
     var extraNames = missione.ricompensa["extra names"];
-    var extraGP = missione.ricompensa.extraGP:
+    var extraGP = missione.ricompensa.extraGP;
     if (Array.isArray(extraNames) && Array.isArray(extraGP) && extraNames.length > 0 && extraNames.length === extraGP.length) {		
       codiceHTML += "<h2>Extra</h2>";
       codiceHTML += "<ul>";

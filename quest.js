@@ -10,9 +10,9 @@ function generaCodiceHTMLMissioni() {
   var missioniVisualizzate = missioni.slice(inizio, fine);  
   missioniVisualizzate.forEach(function(missione) {  
     codiceHTML += "<div class='missione'>";  
-	codiceHTML += "<header>"
+	codiceHTML += "<header>";
     codiceHTML += "<h1 style='" + (missione.urgente === 1 ? "color: red;" : "") + "'>" + missione.titolo + "</h1>"; 
-	codiceHTML += "</header>
+	codiceHTML += "</header>";
     codiceHTML += "<h3>" + missione.corpo + "</h3>";                
     codiceHTML += "<h2>Ricompensa</h2>";		
     codiceHTML += "<h3>Ricompensa base: " + missione.ricompensa.base + " GP</h3>";    

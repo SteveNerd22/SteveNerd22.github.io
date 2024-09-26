@@ -13,22 +13,22 @@ function generaCodiceHTMLMissioni() {
 	codiceHTML += "<header>"
     codiceHTML += "<h1 style='" + (missione.urgente === 1 ? "color: red;" : "") + "'>" + missione.titolo + "</h1>"; 
 	codiceHTML += "</header>
-    codiceHTML += "<p>" + missione.corpo + "</p>";                
+    codiceHTML += "<h3>" + missione.corpo + "</h3>";                
     codiceHTML += "<h2>Ricompensa</h2>";		
-    codiceHTML += "<p>Ricompensa base: " + missione.ricompensa.base + " GP</p>";    
+    codiceHTML += "<h3>Ricompensa base: " + missione.ricompensa.base + " GP</h3>";    
     var extraNames = missione.ricompensa["extra names"];
     var extraGP = missione.ricompensa.extraGP;
     if (Array.isArray(extraNames) && Array.isArray(extraGP) && extraNames.length > 0 && extraNames.length === extraGP.length) {		
       codiceHTML += "<h2>Extra</h2>";
       codiceHTML += "<ul>";
       for (var i = 0; i < extraNames.length; i++) {
-			  codiceHTML += "<li>" + extraNames[i] + ": " + extraGP[i] + " GP</li>";				
+			  codiceHTML += "<li> <h3>" + extraNames[i] + ": " + extraGP[i] + " GP</h3></li>";				
       }			
       codiceHTML += "</ul>";			
     }		
     codiceHTML += "<h2>Conclusione</h2>";		
-    codiceHTML += "<p>" + missione.conclusione.corpo + "</p>";		
-    codiceHTML += "<p>" + missione.conclusione.tempi + "</p>";    
+    codiceHTML += "<h3>" + missione.conclusione.corpo + "</h3>";		
+    codiceHTML += "<h3>" + missione.conclusione.tempi + "</h3>";    
     codiceHTML += "</div>";    
   });  
   return codiceHTML;  

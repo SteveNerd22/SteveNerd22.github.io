@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bacheca Missioni dell'Alleanza</title>
+    <link rel="stylesheet" href="quest.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="baseStyle.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Bacheca Missioni</h1>
+    </header>
+    <div class="menu">
+      <div id="bookmark" class="bookmark" onclick="toggleMenu()"></div>
+        <nav id="sidebar" class="sidebar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">Raccolta delle Cronache</a></li>
+            <li><a href="quest.html">Bacheca Missioni</a></li>
+            <li><a href="minigame.html">&#8203;&#8203;&#8203;</a></li>
+          </ul>
+      </nav>
+    </div>
+    <main>
+        <div class="mission-carousel">
+            <button class="nav-button prev">&#9664;</button>
+            <div class="mission-container">
+                <section id="missions">
+                    <!-- Le missioni verranno inserite qui tramite JavaScript -->
+                </section>
+            </div>
+            <button class="nav-button next">&#9654;</button>
+        </div>
+        <nav class="navigator">
+            <ul id="mission-nav">
+                <!-- I link per il navigatore rapido verranno inseriti qui tramite JavaScript -->
+            </ul>
+        </nav>
+    </main>
+    <footer>
+        <p>&copy; 2024 La tua campagna D&D</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

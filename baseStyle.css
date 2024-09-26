@@ -1,0 +1,49 @@
+header {
+  background: linear-gradient(135deg, #d9534f, #e05d5d);
+  border: 2px solid #d9534f;
+  color: #fff; /* Colore del testo bianco */
+  padding: 15px; /* Spazio interno */
+  text-align: center; /* Allineamento del testo al centro */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  font-family: 'Playfair Display', serif;
+  border: 2px solid #d9534f;
+  border-radius: 8px;
+}
+
+body {
+  background-color: #e5e5e5; /* Colore di sfondo grigio molto chiaro */
+  /*color: #111;  Colore del testo per un buon contrasto */
+  font-family: Arial, sans-serif; /* Font generale */
+}
+
+blockquote {
+  border-left: 4px solid #6c757d; /* Colore grigio scuro per la linea laterale */
+  padding: 10px 20px; /* Spazio interno */
+  margin: 20px 0; /* Spazio esterno */
+  background-color: #f8f9fa; /* Colore di sfondo grigio chiaro */
+  color: #596067; /* Colore del testo grigio scuro */
+  font-style: italic; /* Testo in corsivo */
+  border-radius: 4px; /* Angoli arrotondati */
+  line-height: 1.5; /* Altezza della linea */
+}
+
+h1 {
+  color: #fff; /* Colore del testo principale */
+  font-size: 2em; /* Dimensione del testo dell'intestazione principale */
+  margin: 20px 0; /* Spazio esterno */
+}
+
+h3 {
+  color: #5c656d; /* Colore grigio chiaro */
+  display: inline; /* Mostra gli h4 sulla stessa riga */
+  margin: 0; /* Rimuove il margine di default */
+  padding: 0; /* Rimuove il padding di default */
+  font-weight: normal; /* Peso del font normale */
+  line-height: 1.5; /* Altezza della linea */
+}
+
+/* Stile per h4 con colore personalizzato */
+.highlight {
+  color: red; /* Colore del testo personalizzato */
+}

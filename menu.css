@@ -1,0 +1,69 @@
+.menu {
+  position: fixed; /* Fissa il menu in una posizione */
+  top: 0; /* Posiziona il menu in alto */
+  left: 0; /* Posiziona il menu a sinistra */
+  z-index: 1000; /* Assicura che il menu sia sopra gli altri elementi */
+}
+
+.sidebar {
+  background-color: #333; /* Colore di sfondo per la barra laterale */
+  width: 200px; /* Larghezza della barra laterale */
+  height: 100vh; /* Altezza uguale alla finestra */
+  position: fixed; /* Mantiene la barra laterale fissa */
+  top: 0; /* Barra laterale sempre in alto */
+  left: 0; /* Barra laterale sempre a sinistra */
+  overflow-y: auto; /* Permette lo scorrimento verticale se necessario */
+  transition: transform 0.3s ease; /* Aggiunge una transizione per aprire/chiudere il menu */
+  transform: translateX(-100%); /* Nasconde il menu di default */
+}
+
+.sidebar.active {
+  transform: translateX(0); /* Mostra il menu quando attivo */
+}
+
+.bookmark {
+  position: absolute;
+  top: 20px; /* Distanza dal bordo superiore */
+  left: 0px; /* Distanza dal bordo sinistro */
+  background-color: #333;
+  color: #efefef;
+  padding: 10px;
+  cursor: pointer;
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+  border-top-right-radius: 20px; /* Arrotonda l'angolo in alto a destra */
+  border-bottom-right-radius: 20px; /* Arrotonda l'angolo in basso a destra */
+}
+
+.bookmark::before {
+  content: '▶'; /* Inserisce il simbolo come contenuto */
+  font-size: 20px; /* Dimensioni del simbolo */
+  display: inline-block;
+}
+
+.bookmark.active {
+  transform: translateX(200px);
+}
+
+.bookmark.active::before {
+    content: '◀'; /* Simbolo opposto per la versione attiva */
+}
+
+.sidebar ul {
+  padding: 20px 0;
+  list-style: none;
+}
+
+.sidebar ul li {
+  padding: 10px 20px;
+}
+
+.sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+.sidebar ul li a:hover {
+  background-color: #e05d5d;
+}

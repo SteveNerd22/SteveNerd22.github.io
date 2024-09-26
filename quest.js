@@ -11,7 +11,7 @@ function generaCodiceHTMLMissioni() {
   missioniVisualizzate.forEach(function(missione) {  
     codiceHTML += "<div class='missione'>";  
 	codiceHTML += "<header>";
-    codiceHTML += "<h1 style='" + (missione.urgente === 1 ? "color: red;" : "") + "'>" + missione.titolo + "</h1>"; 
+    codiceHTML += "<h1 style='" + (missione.urgente === 1 ? "font-size: 1.8em; color: red;" : "font-size: 1.8em;") + "'>" + missione.titolo + "</h1>"; 
 	codiceHTML += "</header>";
     codiceHTML += "<h3>" + missione.corpo + "</h3>";                
     codiceHTML += "<h2>Ricompensa</h2>";		

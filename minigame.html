@@ -9,6 +9,7 @@
         <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
+	<audio id="background-audio" src="Secret!.mp3" preload="auto"></audio>
 	<div class="menu">
             <div id="bookmark" class="bookmark" onclick="toggleMenu()"></div>
             <nav id="sidebar" class="sidebar">
@@ -28,5 +29,20 @@
             <p>Note: Hai trovato la stanza segreta, 🤫 non farne parola con nessuno! Fammi sapere che hai trovato questa stanza dicendomi "pecore verdi saltellanti nel covo dell'alleanza" e avrai diritto a ritirare un dado quando vuoi, per esercitare il tuo diritto a ritirare il dado ti basterà dire ad alta voce (in modo che io possa sentirlo) "IO POTENTE ESSERE DIVINO, QUI E OGGI, ESIGO DI RITIRARE QUESTO DADO IN NOME DEL SACRO PATTO"</p>
         </blockquote>
 </body>
+	<script>
+        // Riproduci l'audio quando la pagina è completamente caricata
+        window.addEventListener('load', function() {
+            var audio = document.getElementById('background-audio');
+            audio.play().catch(function(error) {
+                // Gestione errori (ad es. per browser che bloccano l'autoplay)
+                console.error('Autoplay not allowed:', error);
+            });
+
+            // Eventuale codice per gestire la fine della riproduzione, se necessario
+            audio.onended = function() {
+                console.log('Audio playback ended');
+            };
+        });
+    </script>
 <script src="menu.js"></script>
 </html>

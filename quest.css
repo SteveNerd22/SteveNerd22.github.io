@@ -1,0 +1,95 @@
+
+main {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mission-carousel {
+    position: relative;
+    width: 80%;
+    overflow: hidden;
+}
+
+.mission-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 1rem;
+}
+
+.mission {
+    min-width: 300px;
+    background-color: #ffffff; /* Sfondo dei container delle missioni */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    box-sizing: border-box;
+    flex: 0 0 auto;
+}
+
+.mission h2, .mission p strong {
+    background: linear-gradient(135deg, #d9534f, #e05d5d); /* Gradiente per titoli e testi importanti */
+    color: #fff;
+    padding: 0.2rem;
+    border-radius: 3px;
+    border: 1px solid #d9534f; /* Colore del bordo dei titoli e testi importanti */
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #d9534f; /* Colore dello sfondo dei bottoni di navigazione */
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.nav-button.prev {
+    left: 0;
+}
+
+.nav-button.next {
+    right: 0;
+}
+
+.navigator {
+    margin-top: 1rem;
+}
+
+.navigator ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.navigator li {
+    display: inline;
+}
+
+.navigator a {
+    text-decoration: none;
+    background-color: #d9534f; /* Colore di sfondo dei link di navigazione */
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.navigator a.active {
+    background-color: #e05d5d; /* Colore di sfondo per il link attivo */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

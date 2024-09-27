@@ -12,6 +12,7 @@
 			"corpo": "La missione è considerata conclusa quando il capo dei ghoul viene catturato o eliminato (con prove adeguate) e il numero di ghoul nella caverna è ridotto a un livello sicuro per gli abitanti di Neverwinter.",
 			"tempi": "Il compenso viene dimezzato se la missione non viene portata a termine entro 7 giorni dalla sua accettazione.\nNel caso di un fallimento, il capo del gruppo dovrà versare 75 GP all'Alleanza."
 		}
+		"firma": "D. Pendragon"
 	},
 	{
 		"titolo": "PERICOLO! SCAGLIA NOTTURNA!",
@@ -40,6 +41,7 @@
 			"corpo": "La missione è da considerarsi conclusa quando il carro viene fermato, i prigionieri liberati e il capo dell'organizzazione catturato.",
 			"tempi": "Data la lunghezza prevista della missione, non sono previste penalità di tempo.\nPenalità di 100 GP se i gladiatori non vengono salvati."
 		}
+		"firma": "L. Pendragon"
 	},
 	{
 		"titolo": "Alleanza Naufragata",

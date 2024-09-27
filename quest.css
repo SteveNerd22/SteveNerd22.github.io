@@ -98,6 +98,13 @@ main {
     background-color: #e05d5d; /* Colore di sfondo per il link attivo */
 }
 
+.signature {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.5em; /* Cambia la dimensione come preferisci */
+    font-style: italic;
+    color: #000; /* Puoi cambiare il colore se desideri qualcosa di più personalizzato */
+}
+
 footer {
     background-color: #333;
     color: #fff;

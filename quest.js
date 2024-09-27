@@ -28,7 +28,9 @@ function generaCodiceHTMLMissioni() {
     }		
     codiceHTML += "<h2>Conclusione</h2>";		
     codiceHTML += "<h3>" + missione.conclusione.corpo + "</h3>";		
-    codiceHTML += "<h3>" + missione.conclusione.tempi + "</h3>";    
+    codiceHTML += "<h3>" + missione.conclusione.tempi + "</h3>";
+	codiceHTML += "<h2>Firma</h2>";
+	codiceHTML += "<h3 class='signature'>" + (missione.firma ? missione.firma : "_________") + "</h3>";
     codiceHTML += "</div>";    
   });  
   return codiceHTML;  

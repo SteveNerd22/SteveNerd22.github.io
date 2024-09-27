@@ -99,10 +99,11 @@ main {
 }
 
 .signature {
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Lobster', cursive;
     font-size: 1.5em; /* Cambia la dimensione come preferisci */
     font-style: italic;
     color: #000; /* Puoi cambiare il colore se desideri qualcosa di più personalizzato */
+    letter-spacing: 0.05em; /* Aggiungi spaziatura tra le lettere per un effetto più elegante */
 }
 
 footer {
